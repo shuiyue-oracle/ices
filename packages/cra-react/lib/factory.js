@@ -44,14 +44,13 @@ module.exports = class Factory{
 
   // 创建项目
   async create() {
-    console.log('创建项目---', this.name, this.targetCwd)
     try {
       await this.download()
 
       console.log(`\r\nSuccessfully created project ${chalk.cyan(this.name)}`)
       console.log(`\r\n  cd ${chalk.cyan(this.name)}`)
-      console.log(`\r\n  npm install`)
-      console.log("\r\n  npm run dev\r\n")
+      console.log(`\r\n  pnpm install`)
+      console.log("\r\n  pnpm run dev\r\n")
     } catch (error) {
       console.log(error);
     }

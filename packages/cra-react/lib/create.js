@@ -4,14 +4,10 @@ module.exports = async function(name, option) {
   const inquirer = require('inquirer');
   const cwd = process.cwd();
   const targetCWD = path.join(cwd, name);
-  console.log(targetCWD);
   if(fs.existsSync(targetCWD)) { // 是否存在文件
     if(option?.force) { // 是否强制创建
-      console.log('强制创建');
       await fs.remove(targetCWD); // 删除原存在目录
-    } else {
-      console.log('询问用户是否强制创建');
-
+    } else { // 询问用户是否强制创建
       let { action } = await inquirer.prompt([
         {
           name: 'action',
@@ -30,8 +26,6 @@ module.exports = async function(name, option) {
         await fs.remove(targetCWD);
       }
     }
-  } else {
-    console.log('目录不存在，创建目录')
   }
 
   // 创建项目

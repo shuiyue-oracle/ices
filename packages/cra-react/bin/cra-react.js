@@ -15,15 +15,13 @@ const create = require('../lib/create.js');
 program.version(pkg.version);
 
 program.on('--help', () => {
-  console.log(`\r\n${figlet.textSync('create-app', {
-    font: 'Ghost',
+  console.log(`\r\n${figlet.textSync('cra-react', {
+    font: 'Standard',
     horizontalLayout: 'default',
     verticalLayout: 'default',
     width: 500,
     whitespaceBreak: true
   })}`)
-  // 新增信息说明
-  console.log(`\r\n${chalk.cyan(`create-app <command> --help`)} for detailed usage of givern command \r\n`)
 })
 
 // create 命令

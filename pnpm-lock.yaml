@@ -2,7 +2,10 @@ lockfileVersion: 5.4
 
 importers:
 
-  packages/create-app:
+  .:
+    specifiers: {}
+
+  packages/cra-react:
     specifiers:
       axios: ^1.4.0
       chalk: 4.1.0

@@ -6,11 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "cra-react",
-    "cra",
-    "脚手架"
-  ],
+  "keywords": [],
   "author": "zhangyong",
   "license": "ISC"
 }

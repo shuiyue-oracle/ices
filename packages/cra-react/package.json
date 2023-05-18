@@ -1,6 +1,6 @@
 {
-  "name": "cra-react",
-  "version": "0.0.1",
+  "name": "@ices/cra-react",
+  "version": "0.0.1-beta.2",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "cra-react",
+    "cra",
+    "脚手架"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {

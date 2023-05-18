@@ -28,5 +28,8 @@
     "mustache": "^4.2.0",
     "ora": "5.4.1",
     "util": "^0.12.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
